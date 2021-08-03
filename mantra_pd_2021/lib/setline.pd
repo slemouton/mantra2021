@@ -1,0 +1,12 @@
+#N canvas 88 119 453 225 10;
+#X msg 129 127 set \$1;
+#X obj 129 104 line 0 100;
+#X obj 129 80 r \$1;
+#X obj 129 150 s \$1-set;
+#X text 18 6 Control a number box (or other graphical control) by sending
+it "set" messages whenever the value changes. If the value change is
+ramped \, the control imitates the ramp but only updates 10 times a
+second.;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;

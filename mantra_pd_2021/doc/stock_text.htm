@@ -1,0 +1,66 @@
+<HEAD>
+<TITLE>
+Computer Music Examples-Stockhausen
+</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" link="#AA0000" vlink="#770000" marginwidth ="5" marginheight="0" topmargin="0" bottommargin="0" leftmargin="5"><font face ="Times">
+
+Mantra (1970) was originally scored for two pianos, each pianist
+also controlling a ring modulator. The original ring modulators apparently had
+very large frequency selection dials on which the pianists were called on to
+select frequencies varying from about 10 Hz. to 4 Khz., but also sometimes
+matching pitches of the piano so that accuracies better than 1 Hz. are needed.
+Even if the pianists were actually able to select frequencies accurately in
+this way (which seems doubtful) we have made what we think is a much better
+implementation in which MIDI sliders, still controlled by the pianists, are
+given appropriate ranges depending on where they are in the piece. Of course,
+ring modulation itself offers no great challenge to a computer other than
+controlling latency, which is particularly critical in this piece, and which we
+have held to less than 10 milliseconds.  We have performed this piece twice so
+far in public.  The electronics were realized by Kerry
+Hagan with help from the author and Shahrokh Yadegari.
+
+<P> Mantra also calls for crotales and a shortwave radio which one performer
+tunes to any frequency where Morse code can be heard. Such frequencies being
+rare today, we use a CD recording instead.
+
+<P> The patch does ring modulation on two pianos, whose signals come in on
+channels one and two of the computer.  There are two corresponding outputs.
+
+There are
+MIDI inputs from two slider boxes which allow the pianists to control "their"
+respective modulators.
+
+<P> Strictly speaking the patch implements single sideband modulation instead
+of ring modulation.  Each partial of the piano sound is shifted up and/or down
+in frequency by a chosen modulation frequency.
+
+<P> The controls are "ring1-pitch," "ring1-plus", and "ring1-minus," plus the
+corresponding controls for "ring2".  "Ring1" refers to the first modulator
+which acts on input 1 and "ring2," correspondingly for input 2.  The 
+"ring1-pitch" control specifies the modulation frequency in units of MIDI
+pitch (i.e., "69" gives 440 Hz), with microtones allowed as in "69.5" and so
+on.  The "ring1-plus" and "ring1-minus" controls specify the amplitudes
+(the gains, really) of the positive and negative sidebands.  They are both
+in decibels, with "100" corresponding to unity gain. In the analog counterpart, the positive
+and negative sidebands are omnipresent. But in this patch, one can separate them out.
+For the most accurate reproduction of <i>Mantra</i>, both the positive and negative sidebands (or "-plus" and "-minus")
+should be set to the same value.
+
+<P> In the qlist, these parameters can be given as single numbers as in the
+first event:
+<PRE>
+     ring1-pitch 43;
+     ring1-minus 100;
+</PRE>
+or as pairs of numbers like:
+<PRE>
+     ring1-pitch 74 2000;
+</PRE>
+If a single number is given, the "pitch" updates instantly and the two gains
+change smoothly over a period of 30 milliseconds (about 1/33 second).  If you
+give a second number this is a time in milliseconds to override this; for
+instance, the example above makes a 2000-millisecond glissando to pitch 74
+(from whatever the pitch was before) and similarly for the amplitudes which
+can be faded in or out either more quickly or more slowly than the default.
+</BODY>

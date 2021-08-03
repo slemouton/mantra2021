@@ -1,0 +1,29 @@
+0 0 comment --------------- STARTUP -----------------;
+print STARTUP-Mantra;
+tuning-set 442;
+
+master-level 88;
+atten 90;
+set-meters 1;
+comment ------pno1---------------;
+ring_R-pitch 55;
+ring_R-plus 100;
+ring_R-minus 100;
+highpass_R-bw 20;
+highpass_R-freq 200;
+filter_R-bypass-set 1;
+compressor_R-bypass-set 1;
+comment ------pno2---------------;
+ring_L-pitch 55;
+ring_L-plus 100;
+ring_L-minus 100;
+highpass_L-bw 20;
+highpass_L-freq 200;
+filter_L-bypass-set 1;
+compressor_L-bypass-set 1;
+0 1 comment --------------- EVENT 1  -------------;
+print EVENT1;
+comment ------pno1---------------;
+0 2 comment --------------- EVENT  --------------;
+print EVENT2;
+

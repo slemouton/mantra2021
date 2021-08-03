@@ -1,0 +1,6 @@
+#! /bin/bash
+
+${PD:-pd} ${PDSETTINGS:-}  \
+    -inchannels 2 -outchannels 2 \
+    -path ${BASEDIR:-.} -path ${BASEDIR:-.}/lib -path ${BASEDIR:-.}/../../lib \
+    $* ${BASEDIR:-.}/mantra.pd

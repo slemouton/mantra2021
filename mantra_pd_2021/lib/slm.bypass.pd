@@ -1,0 +1,24 @@
+#N canvas 0 22 409 292 10;
+#X obj 148 56 inlet;
+#X obj 66 55 inlet~;
+#X obj 148 84 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 113 141 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 91 161 *~ 1;
+#X obj 133 161 *~ 0;
+#X obj 113 113 == 0;
+#X obj 233 117 outlet~;
+#X text 227 96 to effect inlet;
+#X text 40 29 signal inlet;
+#X obj 219 244 outlet~;
+#X text 148 30 bypass toggle;
+#X connect 0 0 2 0;
+#X connect 1 0 5 0;
+#X connect 1 0 4 0;
+#X connect 2 0 5 1;
+#X connect 2 0 6 0;
+#X connect 3 0 4 1;
+#X connect 4 0 7 0;
+#X connect 5 0 10 0;
+#X connect 6 0 3 0;
