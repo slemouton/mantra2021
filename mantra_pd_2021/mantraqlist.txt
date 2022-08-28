@@ -1,7 +1,6 @@
 0 0 comment --------------- STARTUP -----------------;
 print STARTUP-Mantra;
 tuning-set 442;
-
 master-level 88;
 atten 90;
 set-meters 1;
@@ -21,6 +20,8 @@ highpass_L-bw 20;
 highpass_L-freq 200;
 filter_L-bypass-set 1;
 compressor_L-bypass-set 1;
+lowpass_SUB-freq 150;
+lowpass_SUB-bw 100;
 0 1 comment --------------- EVENT 1  -------------;
 print EVENT1;
 comment ------pno1---------------;
