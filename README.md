@@ -1,11 +1,13 @@
 # mantra2021
 
-## puredata version 
-the starting point for this patch is the Miller Puckette pdrp version (cf.http://msp.ucsd.edu/pdrp/latest/doc/)
 0.51.4 - Darwin - 64 bit
 
+## puredata version 
+
+the starting point for this patch is the Miller Puckette pdrp version (cf.http://msp.ucsd.edu/pdrp/latest/doc/)
+
 ## performances
-this patch has been publicly performed at these concerts (and maybe more ...)
+this patch has been publicly performed at the following concerts (and maybe more ...)
 
 - 15/04/2012 - Chapelle Mejan - Arles -(Jean Frederic Neuburger - Jean François Heisser)
 - 19/07/2012 - Abbaye aux Dames - festival de Saintes - Thomas Goepfer (JFN/JFH)
