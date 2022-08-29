@@ -15,17 +15,23 @@ The pianists controls the oscillators using two ipads runnning touchosc.
 
 Pour cette version, chaque pianiste manipule un iPad qui contrôle les frequences des oscillateurs générés par le Macintosh.
 
-Interface pour le piano 1 : mantra-piano1 (3 pages)
+transfer *mantra_Master2022b.tosc*,  *mantra_1b2022.tosc* and *mantra_2b2022.tosc* to all the ipads
 
-- 1 octave solb2/sol#3 (54/68)
-- registre aigu high -> A4 (81)	
-- kurzwellen
+- Piano 1 interface :*mantra_1b2022.tosc* (3 pages)
 
-Interface pour le piano 2 : mantra-piano2 (3 pages)
+    - 1 octave solb2/sol#3 (54/68)
+    - registre aigu high -> A4 (81)	
+    - kurzwellen
 
-- 1 octave sib1/do3 (46/60)
-- high -> A5 (93)
-- low
+- Piano 2 interface : *mantra_2b2022.tosc* (3 pages)
+
+    - 1 octave sib1/do3 (46/60)
+    - high -> A5 (93)
+    - low
+
+- Electronic musician interface : *mantra_Master2022b.tosc* (5 pages)
+
+    - during performance use the *concert* (middle tab) page
 
 ### touchosc and network (udp/osc) settings
 Pour réaliser la connexion entre les ipad (logiciel touchOsc) et le macintosh (logiciel PureData), suivre les étapes suivantes (dans l’ordre) :
