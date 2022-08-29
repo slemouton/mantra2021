@@ -7,7 +7,7 @@ The starting point for this patch is the Miller Puckette pdrp version (cf.http:/
 
 ## technical rider
 the latest version of the tech rider is :
-[fiche-techniqueMANTRA2019.pdf]()
+[fiche-techniqueMANTRA2019.pdf](https://github.com/slemouton/mantra2021/blob/master/Mantra-doc/fiche-techniqueMANTRA2019.pdf)
 
 ## touchosc
 
