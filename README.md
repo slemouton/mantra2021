@@ -5,6 +5,9 @@ Dans Mantra, qui est considérée à juste titre comme une des premières pièce
 The patch runs under pure data version 0.52-2 - Darwin - 64 bit
 The starting point for this patch is the Miller Puckette pdrp version (cf.http://msp.ucsd.edu/pdrp/latest/doc/)
 
+## dependancies
+The ircam-spat package is required (for the compressor~ effect)
+
 ## technical rider
 the latest version of the tech rider is :
 [fiche-techniqueMANTRA2019.pdf](https://github.com/slemouton/mantra2021/blob/master/Mantra-doc/fiche-techniqueMANTRA2019.pdf)
